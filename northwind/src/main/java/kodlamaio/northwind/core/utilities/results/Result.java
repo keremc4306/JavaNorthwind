@@ -5,12 +5,12 @@ public class Result {
 	private String message;
 	
 	public Result(boolean success) {
-		this.success = success;
+		this.success = success; //success'i set etmiş oluyor
 	}
 	
 	public Result(boolean success, String message) {
-		this.success = success;
-		this.message = message;
+		this(success); //Tek parametreli olan constructorı çağırmış olduk
+		this.message = message; //Kendi mesajını set etmiş oluyor
 	}
 	
 	public boolean isSuccess() {

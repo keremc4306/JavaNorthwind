@@ -8,7 +8,7 @@ public class DataResult<T> extends Result {
 	}
 	
 	public DataResult(T data, boolean success) {
-		super(success); //Base sınıfın constructorlarını çalıştırmaya yarıyor.
+		super(success); //Base sınıfın tek parametreli constructor'ını çalıştırmaya yarıyor.
 		this.data = data;
 	}
 	

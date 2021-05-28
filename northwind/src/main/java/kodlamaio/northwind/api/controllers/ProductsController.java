@@ -29,15 +29,8 @@ public class ProductsController {
 	public List<Product> getAll() {
 		return this.productService.getAll();
 	}
-	
-	@PostMapping("/add")
-	public Result add(Product product) {
-		return new Result(true, "Ürün eklendi");
-	}
+
 }
-
-
-
 
 //kodlama.io - domain
 //Disardan birisi bize "kodlama.io/api/products" şeklinde istekte
